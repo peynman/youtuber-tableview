@@ -409,7 +409,7 @@ class="ms-2" icon="mdi-dots-vertical" v-bind="{ ...props, ...tooltipProps }"
 
                 <template #item.estimatedSubs="{ item }">
                   <v-icon
-v-if="item[selectedEstimate + 'Subs'] !== null" size="small"
+                    v-if="item[selectedEstimate + 'Subs'] !== null" size="small"
                     :color="item[selectedEstimate + 'Subs'] < 0 ? 'red' : 'green'">{{ `mdi-arrow-${item[selectedEstimate
                       +
                       'Subs'] < 0 ? 'down' : 'up'}` }}</v-icon>
